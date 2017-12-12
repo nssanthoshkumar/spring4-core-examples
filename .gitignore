@@ -32,3 +32,4 @@ bin
 .settings
 .springBeans
 .project
+/.recommenders/
