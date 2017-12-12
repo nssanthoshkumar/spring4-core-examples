@@ -17,12 +17,6 @@ In New Java Project wizard, just add Project Name as SpringHelloWorld and click 
 ### Step 2 - Convert Java Project to Maven
 Right click on SpringHelloWorld project → Configure → Convert to Maven Project.
 
-Please refer the below link to learn more about conversion of Java project to maven project.
-
-http://www.boraji.com/how-to-convert-java-project-to-maven-project-in-eclipse
-
- 
-
 ### Step 3 – Add Spring dependency to Maven pom.xml
 Open pom.xml file and add required spring dependency to it. Here is the pom.xml file.
 
@@ -59,11 +53,11 @@ pom.xml
 ```
 
 ### Step 4 – Create a Spring bean class
-Let's create our first spring bean class under com.boraji.tutorial.spring package and write the following code in it.
+Let's create our first spring bean class under com.tutorial.spring package and write the following code in it.
 
 HelloWorld.java
 ```bash
-package com.boraji.tutorial.spring;
+package com.tutorial.spring;
 
 /**
  * @author imssbora
@@ -84,16 +78,16 @@ beans.xml
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<bean id="helloWorld" class="com.boraji.tutorial.spring.HelloWorld" />
+	<bean id="helloWorld" class="com.tutorial.spring.HelloWorld" />
 	
 </beans>
 ```
 ### Step 6 – Create a main class
-Now create a main class under com.boraji.tutorial.spring package as shown below.
+Now create a main class under com.tutorial.spring package as shown below.
 
 MainApp.java
 ```bash
-package com.boraji.tutorial.spring;
+package com.tutorial.spring;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
